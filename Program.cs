@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleHeranca.Entidades;
+using System;
 
 namespace ConsoleHeranca
 {
@@ -6,7 +7,10 @@ namespace ConsoleHeranca
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            ContaX contaX = new ContaX(222, "Ronaldo", 500, 900);
+
+            Console.WriteLine(contaX.SaldoConta);
         }
     }
 }
